@@ -195,7 +195,7 @@ if __name__ == '__main__':
         sdp_loss_lambda = 0.50
         model_path = sys.argv[3]
     else:
-        sdp_loss_lambda = sys.argv[3] if len(sys.argv)<4 else (sys.argv[3],sys.argv[4])
+        sdp_loss_lambda = sys.argv[3] if len(sys.argv)<4 else (sys.argv[3],sys.argv[-1])
         model_path = None
 
     # run for testing the lambda
